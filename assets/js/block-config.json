@@ -1,0 +1,22 @@
+{
+  "core/heading": {
+    "fields": [
+      { "name": "content", "label": "Heading Text" }
+    ]
+  },
+  "core/paragraph": {
+    "fields": [
+      { "name": "content", "label": "Paragraph Text" }
+    ]
+  },
+  "core/button": {
+    "fields": [
+      { "name": "text", "label": "Button Text" }
+    ]
+  },
+  "core/image": {
+  "fields": [
+    { "name": "url", "label": "Image URL" }
+  ]
+}
+}
