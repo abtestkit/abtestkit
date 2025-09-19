@@ -2,6 +2,8 @@
 **Simple, in-editor testing for WordPress Core Editor (Gutenberg).**  
 No dashboards. Just click a block, open the sidebar, add Variant B, and wait for a winner.
 
+![abtestkit demo](assets/demo.gif)
+
 ---
 
 ## What it does
