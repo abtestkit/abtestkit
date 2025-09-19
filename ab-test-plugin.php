@@ -1,8 +1,8 @@
 <?php
 /**
  * Plugin Name:       abtestkit
- * Plugin URI:        https://placeholder.com/
- * Description:       Simple A/B testing for Core Editor (Gutenberg) blocks
+ * Plugin URI:        https://github.com/abtestkit
+ * Description:       Simple, in-editor testing for WordPress Core Editor (Gutenberg).
  * Version:           1.0.0
  * Author:            abtestkit
  */

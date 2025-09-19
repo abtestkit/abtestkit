@@ -2483,8 +2483,40 @@ return el(
           el(
             PluginSidebar,
             { name: 'abtest-sidebar', title: 'A/B Test' },
-            el(AbSidebarComponent)
+            // Wrapper makes the sidebar a flex column so the footer can stick to the bottom
+            el('div', {
+              style: {
+                display: 'flex',
+                flexDirection: 'column',
+                height: '100%',
+              }
+            }, [
+              // Main content scrolls if it gets long
+              el('div', {
+                style: {
+                  flex: '1 1 auto',
+                  overflowY: 'auto',
+                  paddingBottom: '8px',
+                }
+              }, el(AbSidebarComponent)),
+
+              // Footer with a divider
+              el('div', {
+                style: {
+                  marginTop: 'auto',
+                  padding: '12px',
+                  borderTop: '1px solid #ddd',
+                  fontSize: '12px',
+                  textAlign: 'center',
+                  background: '#fff',
+                }
+              }, el('a', {
+                href: 'mailto:abtestkit@gmail.com?subject=abtestkit%20Feedback',
+                style: { textDecoration: 'none', color: '#007cba' }
+              }, 'Request a feature or raise an issue'))
+            ])
           ),
+
         ]),
     });
   });
