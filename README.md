@@ -1,20 +1,20 @@
 # abtestkit
 **Simple, in-editor testing for WordPress Core Editor (Gutenberg).**  
-No dashboards. Just click a block, open the sidebar, add Variant B, and go.
+No dashboards. Just click a block, open the sidebar, add Variant B, and wait for a winner.
 
 ---
 
 ## What it does
-Run lightweight A/B tests directly on Gutenberg blocks:
+Run lightweight A/B tests directly on Gutenberg,
+automatically evaluates performance and shows you the winner.
 
 - **Supported blocks:** core Button, Heading, Paragraph, Images
 - **Inline editing UI:** toggle A/B testing from the block sidebar
 - **Group tests:** keep multiple blocks (e.g., hero heading + paragraph + button) in sync as A/A or B/B
 - **Frontend runtime:** impressions & clicks tracked via a tiny JS script (no external CDN)
-- **Evaluation & winner:** Bayesian evaluation (Beta prior) with “stale/inconclusive” handling
+- **Evaluation & winner:** automatically evaluates and declares winner using Bayesian evaluation. Stale & inconclusive tests are also declared
 - **Respect existing markup:** preserves button attributes (e.g., Popup Maker), only touches what it must
 - **Privacy-first telemetry:** opt-in only (anonymous + minimal if enabled)
-- **Clean uninstall:** removes DB table, block attributes, and cached AB artifacts
 
 ---
 
@@ -35,13 +35,13 @@ Run lightweight A/B tests directly on Gutenberg blocks:
    Variant **A** auto-fills from the block’s current content; you add **Variant B**.
 
 5. **(Optional) Group blocks**  
-   Turn on **Group sync** and connect them the same group code to force A/A or B/B across blocks.
+   Turn on **Group sync** and connect the same group code to force A/A or B/B across multiple blocks.
 
 6. **Go!**  
    Hit **Start** (Go). Publish/Update the post. Traffic is split and tracked.
 
 7. **See results**  
-   The sidebar shows impressions/clicks and a winner when confidence is high — or flags the test as **stale**.
+   The sidebar shows impressions/clicks and declares a winner when confident — or flags the test as **stale**.
 
 ---
 
